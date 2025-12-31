@@ -50,8 +50,11 @@
                     <h2>Book Your Session</h2>
                     <p>Fill out the form below and we'll get back to you within 24-48 hours.</p>
 
-                    <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+                    <form id="contactForm" name="contact" method="POST" action="/success.html" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
                         <input type="hidden" name="form-name" value="contact">
+                        <div style="display: none;">
+                            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                        </div>
                         <div class="form-group">
                             <label for="name">Full Name *</label>
                             <input type="text" id="name" name="name" required>
