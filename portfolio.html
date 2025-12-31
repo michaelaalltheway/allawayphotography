@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Allaway Photography</title>
+    <meta name="description" content="View our portfolio of professional photography including weddings, portraits, families, and events.">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Allaway Photography">
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="client-portal.html" class="client-link">Client Portal</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Portfolio</h1>
+            <p>A collection of our finest work</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filters -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="weddings">Weddings</button>
+                <button class="filter-btn" data-filter="portraits">Portraits</button>
+                <button class="filter-btn" data-filter="family">Family</button>
+                <button class="filter-btn" data-filter="newborn">Newborn</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <!-- Wedding Photos -->
+                <div class="portfolio-item" data-category="weddings">
+                    <img src="images/wedding-1.jpg" alt="Wedding photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Sarah & Michael</h3>
+                        <p>Wedding</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="weddings">
+                    <img src="images/wedding-2.jpg" alt="Wedding photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Emily & James</h3>
+                        <p>Wedding</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="weddings">
+                    <img src="images/wedding-3.jpg" alt="Wedding photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Rachel & Tom</h3>
+                        <p>Wedding</p>
+                    </div>
+                </div>
+
+                <!-- Portrait Photos -->
+                <div class="portfolio-item" data-category="portraits">
+                    <img src="images/portrait-1.jpg" alt="Portrait photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Professional Headshots</h3>
+                        <p>Corporate</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="portraits">
+                    <img src="images/portrait-2.jpg" alt="Portrait photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Senior Portraits</h3>
+                        <p>Class of 2024</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="portraits">
+                    <img src="images/portrait-3.jpg" alt="Portrait photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Engagement Session</h3>
+                        <p>Alex & Jordan</p>
+                    </div>
+                </div>
+
+                <!-- Family Photos -->
+                <div class="portfolio-item" data-category="family">
+                    <img src="images/family-1.jpg" alt="Family photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>The Johnson Family</h3>
+                        <p>Family Portrait</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="family">
+                    <img src="images/family-2.jpg" alt="Family photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Smith Family</h3>
+                        <p>Outdoor Session</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="family">
+                    <img src="images/family-3.jpg" alt="Family photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>The Martinez Family</h3>
+                        <p>Holiday Session</p>
+                    </div>
+                </div>
+
+                <!-- Newborn Photos -->
+                <div class="portfolio-item" data-category="newborn">
+                    <img src="images/newborn-1.jpg" alt="Newborn photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Baby Emma</h3>
+                        <p>Newborn</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="newborn">
+                    <img src="images/newborn-2.jpg" alt="Newborn photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Baby Oliver</h3>
+                        <p>Newborn</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="newborn">
+                    <img src="images/newborn-3.jpg" alt="Newborn photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Baby Sophia</h3>
+                        <p>Newborn</p>
+                    </div>
+                </div>
+
+                <!-- Event Photos -->
+                <div class="portfolio-item" data-category="events">
+                    <img src="images/event-1.jpg" alt="Event photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Tech Summit 2024</h3>
+                        <p>Corporate Event</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="events">
+                    <img src="images/event-2.jpg" alt="Event photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Birthday Celebration</h3>
+                        <p>Private Event</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="events">
+                    <img src="images/event-3.jpg" alt="Event photography" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Charity Gala</h3>
+                        <p>Fundraiser Event</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightboxImg" alt="Full size image">
+        <div id="lightboxCaption"></div>
+        <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+        <button class="lightbox-next" aria-label="Next image">&#10095;</button>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Love What You See?</h2>
+            <p>Let's create beautiful memories together</p>
+            <a href="contact.html" class="btn btn-light">Book Your Session</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Allaway Photography</h3>
+                    <p>Professional photography services capturing life's precious moments.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61576560236932" target="_blank" aria-label="Facebook">Facebook</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:allawayphotography@gmail.com">allawayphotography@gmail.com</a></p>
+                    <p><a href="client-portal.html">Client Portal Login</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Allaway Photography. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

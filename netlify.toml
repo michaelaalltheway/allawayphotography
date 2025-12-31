@@ -1,0 +1,38 @@
+# Netlify Configuration for Allaway Photography
+
+[build]
+  publish = "."
+  command = "echo 'No build command needed for static site'"
+
+# Redirect rules for cleaner URLs (optional)
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 301
+
+# Headers for security and performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, immutable"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Form handling (if using Netlify Forms)
+# Netlify will automatically detect forms with the netlify or data-netlify attribute

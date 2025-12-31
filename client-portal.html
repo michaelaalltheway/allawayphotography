@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Portal | Allaway Photography</title>
+    <meta name="description" content="Access your private photo gallery. For existing clients of Allaway Photography.">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Allaway Photography">
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="client-portal.html" class="active client-link">Client Portal</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Client Portal</h1>
+            <p>Access your private photo gallery</p>
+        </div>
+    </section>
+
+    <!-- Portal Login Section -->
+    <section class="portal-section">
+        <div class="container">
+            <div class="portal-login-wrapper">
+                <div class="portal-login-box">
+                    <h2>Welcome Back!</h2>
+                    <p>Enter your gallery code to access your photos</p>
+
+                    <form id="portalLoginForm" class="portal-form">
+                        <div class="form-group">
+                            <label for="galleryCode">Gallery Access Code</label>
+                            <input type="text" id="galleryCode" name="galleryCode" placeholder="Enter your code" required>
+                            <small>You received this code via email after your session</small>
+                        </div>
+
+                        <div class="form-message" id="portalMessage"></div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Access Gallery</button>
+                    </form>
+
+                    <div class="portal-help">
+                        <p><strong>Don't have your access code?</strong></p>
+                        <p>Contact us at <a href="mailto:allawayphotography@gmail.com">allawayphotography@gmail.com</a> and we'll resend it to you.</p>
+                    </div>
+                </div>
+
+                <div class="portal-info">
+                    <h3>What You'll Find in Your Gallery</h3>
+                    <div class="portal-features">
+                        <div class="portal-feature">
+                            <span class="feature-icon">🖼️</span>
+                            <div>
+                                <h4>View Your Photos</h4>
+                                <p>Browse all your professionally edited images in high resolution</p>
+                            </div>
+                        </div>
+                        <div class="portal-feature">
+                            <span class="feature-icon">⬇️</span>
+                            <div>
+                                <h4>Download</h4>
+                                <p>Download individual photos or entire galleries for printing and sharing</p>
+                            </div>
+                        </div>
+                        <div class="portal-feature">
+                            <span class="feature-icon">❤️</span>
+                            <div>
+                                <h4>Select Favorites</h4>
+                                <p>Mark your favorite images for prints or albums</p>
+                            </div>
+                        </div>
+                        <div class="portal-feature">
+                            <span class="feature-icon">🔒</span>
+                            <div>
+                                <h4>Secure Access</h4>
+                                <p>Your photos are private and accessible only with your unique code</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portal-tips">
+                        <h4>Tips for Your Gallery</h4>
+                        <ul>
+                            <li>Your gallery will remain active for 60 days from delivery</li>
+                            <li>Download your favorites early - we recommend backing up your photos</li>
+                            <li>Share your gallery link with family and friends</li>
+                            <li>Order prints directly through your gallery for the best quality</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Available Galleries List (shown after login) -->
+            <div id="galleriesList" class="galleries-list" style="display: none;">
+                <h2>Your Galleries</h2>
+                <div id="galleriesContainer" class="galleries-container">
+                    <!-- Galleries will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Allaway Photography</h3>
+                    <p>Professional photography services capturing life's precious moments.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61576560236932" target="_blank" aria-label="Facebook">Facebook</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:allawayphotography@gmail.com">allawayphotography@gmail.com</a></p>
+                    <p><a href="client-portal.html">Client Portal Login</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Allaway Photography. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/portal.js"></script>
+</body>
+</html>

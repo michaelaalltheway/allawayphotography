@@ -1,0 +1,59 @@
+# Allaway Photography - Git Ignore File
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-workspace
+.sublime-project
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+
+# Client Gallery Images (if you want to keep client photos private)
+# Uncomment the line below if you don't want to track client gallery images in git
+# images/galleries/*/
+
+# Backup Files
+*.bak
+*.backup
+
+# Node modules (if you add build tools later)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build output (if using build tools)
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# MacOS
+.AppleDouble
+.LSOverride
+
+# Windows
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
